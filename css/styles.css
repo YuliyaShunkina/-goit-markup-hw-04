@@ -571,7 +571,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .product-item-link:hover .product-overlay-txt,
-.product-item-link:hover .product-overlay-txt {
+.product-item-link:focus .product-overlay-txt {
   transform: translateY(0%);
 }
 
@@ -612,6 +612,7 @@ img {
   width: 24px;
   height: 24px;
   border-radius: 50%;
+  color: #e7e9fc;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
@@ -623,15 +624,13 @@ img {
 .modal-btn:focus {
   background-color: #404bbf;
   border: none;
+  color: #ffffff;
 }
 .modal-close {
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close:hover,
-.modal-close:focus {
-  fill: #ffffff;
-}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
