@@ -99,17 +99,6 @@ img {
   display: flex;
   gap: 40px;
 }
-.current::after {
-  position: absolute;
-  content: "";
-  display: block;
-  background-color: #404bbf;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  bottom: -1px;
-  left: 0;
-}
 
 .header-menu-link {
   position: relative;
@@ -117,7 +106,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #404bbf;
+  color: #2e2f42;
   padding-top: 24px;
   padding-bottom: 24px;
   transition-property: color;
@@ -136,6 +125,21 @@ img {
 .header-address-link:focus {
   color: #404bbf;
 }
+.current {
+  color: #404bbf;
+}
+
+.current::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: #404bbf;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  bottom: -1px;
+  left: 0;
+}
 .adress {
   display: flex;
   margin-left: auto;
@@ -149,7 +153,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--main-color);
+  color: #2e2f42;
   transition: color 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
